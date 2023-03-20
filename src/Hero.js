@@ -65,7 +65,7 @@ export default function Hero() {
               className="relative ... group -translate-y-2"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/meikei-99/Technical_Test"
+              href="https://github.com/meikei-99/eXplore_React"
             >
               <h3 className={yellowbutton}>GitHub Repo</h3>
               <h3 className={yellowbuttonTransition}>GitHub Repo</h3>
