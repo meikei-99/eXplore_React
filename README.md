@@ -1,4 +1,4 @@
-# eXplore _ built with React
+# nft eXplore _ built with React
 
 This project was built with Alchemy's NFT API to query data on non-fungible tokens (NFT) on the Ethereum blockchain.
 The data that were being retrieved included:
