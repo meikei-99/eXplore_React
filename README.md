@@ -19,6 +19,6 @@ The data that were being retrieved included:
 This project is still in development mode and future improvement is needed. It might take some time to load the webpages.
 Thank you.
 <br/>
-Live demo:<a href="https://nft-explore.vercel.app/" target="_blank"> here</a>.
+Live demo:<a href="https://nfts-explore.vercel.app/" target="_blank"> here</a>.
 
 
