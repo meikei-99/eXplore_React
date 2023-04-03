@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { BsWifi2 } from "react-icons/bs";
 import Sidebar from "./components/Sidebar";
+import error from "./assets/error.png";
 
 export default function App() {
   const config = {
@@ -51,7 +52,6 @@ export default function App() {
       } else {
         setDisplayAttribute(true);
       }
-      console.log(`Display attribute:${displayAttribute}`);
 
       //TODO: Fetch NFT's owner
       // let i = 1;
@@ -249,7 +249,7 @@ export default function App() {
                     trait2={nft.rawMetadata.attributes[1].trait_type}
                     key={nft.tokenId}
                   ></NftBox>
-                ) : (
+                ) : nft.rawMetadata.image ? (
                   <NftBox
                     nftAddress={nftAddress}
                     tokenId={nft.tokenId}
@@ -257,6 +257,14 @@ export default function App() {
                       "ipfs://",
                       "https://ipfs.io/ipfs/"
                     )}
+                    imageLoading={loading}
+                    key={nft.tokenId}
+                  ></NftBox>
+                ) : (
+                  <NftBox
+                    nftAddress={nftAddress}
+                    tokenId={nft.tokenId}
+                    imageURI={error}
                     imageLoading={loading}
                     key={nft.tokenId}
                   ></NftBox>
