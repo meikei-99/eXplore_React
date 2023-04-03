@@ -238,7 +238,7 @@ export default function App() {
                   <NftBox
                     nftAddress={nftAddress}
                     tokenId={nft.tokenId}
-                    imageURI={nft.rawMetadata.image.replace(
+                    imageURI={nft.rawMetadata.image?.replace(
                       "ipfs://",
                       "https://ipfs.io/ipfs/"
                     )}
@@ -253,7 +253,7 @@ export default function App() {
                   <NftBox
                     nftAddress={nftAddress}
                     tokenId={nft.tokenId}
-                    imageURI={nft.rawMetadata.image.replace(
+                    imageURI={nft.rawMetadata.image?.replace(
                       "ipfs://",
                       "https://ipfs.io/ipfs/"
                     )}
